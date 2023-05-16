@@ -13,13 +13,13 @@ const library = [];
 let inputDate = prompt('Enter book data separate by ";"');
 
 //TODO
-while (inputDate) {
+while (inputDate) {//нажал cancel->null
   addDataToLibrary(inputDate);
   inputDate = prompt('Enter book data separate by ";"');
 }
 
 printLibrary();
-//1;2;3;4
+//1;2;3;4 - 4 отрезка строки/борка информации, разделенные тремя символами ;
 
 function printLibrary() {
   for (let i = 0; i < library.length; i++) {
